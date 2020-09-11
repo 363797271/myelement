@@ -11,7 +11,7 @@ export const ShowMessage = () => ({
   template: '<Button @click="onClick">Show</Button>',
   methods: {
     onClick() {
-      console.log('Hello world!')
+      console.log('Hello world!!')
     }
   }
 })
