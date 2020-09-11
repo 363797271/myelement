@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input v-bind="$attrs" @input="handleInput" />
+    <input :type="type" v-bind="$attrs" @input="handleInput" />
   </div>
 </template>
 
@@ -12,7 +12,13 @@ export default {
     prop: 'value',
     event: 'input'
   },
-  props: ['value'],
+  props: {
+    value: {},
+    type: {
+      type: String,
+      default: 'text'
+    }
+  },
   methods: {
     handleInput($event) {
       this.$emit('input', $event.target.value)
