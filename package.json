@@ -1,7 +1,7 @@
 {
   "private": true,
   "workspaces": [
-    "packages/*"
+    "./packages/*"
   ],
   "name": "myelement",
   "version": "0.1.0",
@@ -10,7 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lerna": "lerna publish"
   },
   "keywords": [],
   "author": "zyd <363797271@qq.me> (https://github.com/363797271)",
@@ -22,6 +23,7 @@
     "@storybook/addon-links": "^6.0.21",
     "@storybook/vue": "^6.0.21",
     "babel-loader": "^8.1.0",
+    "lerna": "^3.22.1",
     "react-is": "^16.13.1",
     "vue-loader": "^15.9.3",
     "vue-template-compiler": "^2.6.12"
